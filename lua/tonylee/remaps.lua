@@ -9,7 +9,6 @@ local silent = { silent = true }
 
 -- easier to enter normal mode
 inoremap("<C-c>", "<Esc>")
-tnoremap("<C-c><C-c>", "<C-\\><C-n>", silent)
 
 -- built in terminal
 nnoremap("<leader>t", "<Cmd>sp<CR> <Cmd>term<CR> <Cmd>resize 20N<CR> i", silent)

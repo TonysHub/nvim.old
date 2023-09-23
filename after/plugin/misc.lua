@@ -36,11 +36,10 @@ require("nvim-treesitter.configs").setup({
 })
 
 require("nvim-autopairs").setup()
-require("nvim-surround").setup()
+-- require("nvim-surround").setup()
 require("cloak").setup()
 require("ccc").setup()
 require("harpoon").setup()
-      
 vim.g["mkdp_markdown_css"] = vim.fn.expand("~/.config/nvim/md.css")
 vim.g["mkdp_theme"] = "light"
 
@@ -50,19 +49,14 @@ spectre.setup()
 
 -- keymaps
 
-nnoremap("<leader>s", spectre.open)
-vnoremap("<leader>s", spectre.open_visual)
+nnoremap("<leader>so", spectre.open)
+vnoremap("<leader>so", spectre.open_visual)
 nnoremap("<leader>u", "<Cmd>UndotreeToggle<CR>", silent)
 nnoremap("<leader>gg", "<Cmd>LazyGit<CR>", silent)
 nnoremap("<leader>co", "<Cmd>CccPick<CR>", silent)
 nnoremap("<leader>cc", "<Cmd>CccHighlighterToggle<CR>", silent)
 nnoremap("<leader>cv", "<Cmd>CccConvert<CR>", silent)
-nnoremap("<leader>a", require("harpoon.mark").add_file, silent)
-nnoremap("<leader>e", harpoon_ui.toggle_quick_menu, silent)
-nnoremap("<leader>oo", "<Cmd>TodoClose<CR>", silent)
-nnoremap("<leader>ol", "<Cmd>TodoOpenFileList<CR>", silent)
 
 for i = 1, 10 do
   nnoremap("<leader>" .. i % 10, function() harpoon_ui.nav_file(i) end, silent)
-  nnoremap("<leader>o" .. i % 10, "<Cmd>TodoOpenIndex " .. i .. "<CR>", silent)
 end

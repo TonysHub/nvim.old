@@ -61,7 +61,7 @@ require("lazy").setup({
   { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 
   -- terminal
-  { "akinsho/toggleterm.nvim", tag = '*', config = function()
+  { "akinsho/toggleterm.nvim", config = function()
      require("toggleterm").setup()
    end},
 
@@ -91,7 +91,7 @@ require("lazy").setup({
   },
   { "uga-rosa/ccc.nvim" },
   { "nvim-pack/nvim-spectre" },
-  { "tpope/nvim-surround" },
+  { "tpope/vim-surround" },
 
   -- looks
   {
