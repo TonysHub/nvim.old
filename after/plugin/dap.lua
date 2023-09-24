@@ -4,11 +4,11 @@ local dapui = require("dapui")
 
 local silent = { silent = true }
 
-nnoremap("<F2>", dap.terminate, silent)
-nnoremap("<F5>", dap.continue, silent)
+nnoremap("<leader>dt", dap.terminate, silent)
+nnoremap("<leader>dc", dap.continue, silent)
 -- nnoremap("<F10>", dap.step_over, silent)
-nnoremap("<F10>", dap.step_into, silent)
-nnoremap("<F12>", dap.step_out, silent)
+nnoremap("<leader>di", dap.step_into, silent)
+nnoremap("<leader>do", dap.step_out, silent)
 
 nnoremap("<leader>du", dapui.toggle, silent)
 nnoremap(

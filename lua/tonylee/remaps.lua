@@ -11,7 +11,7 @@ local silent = { silent = true }
 inoremap("<C-c>", "<Esc>")
 
 -- built in terminal
-nnoremap("<leader>t", "<Cmd>sp<CR> <Cmd>term<CR> <Cmd>resize 20N<CR> i", silent)
+nnoremap("<C-t>", "<Cmd>sp<CR> <Cmd>term<CR> <Cmd>resize 20N<CR> i", silent)
 
 -- writing
 nnoremap("<C-s>", "<Cmd>set spell!<CR>", silent)
@@ -35,6 +35,9 @@ nnoremap("<C-u>", "<C-u>zz")
 nnoremap("n", "nzzzv")
 nnoremap("N", "Nzzzv")
 
+-- open previous tab
+nnoremap("<leader><Tab>", "<C-^>")
+
 -- copy paste related
 nnoremap("<leader>y", [["+y]])
 vnoremap("<leader>y", [["+y]])
@@ -45,6 +48,8 @@ nnoremap("<leader>g", "ggVG<CR>")
 
 -- apply formatting
 nnoremap("<leader>f", vim.lsp.buf.format)
+
+tnoremap("<C-x>", "<C-\\><C-n>")
 
 -- move through buffers
 -- nnoremap("<leader>h", "<C-w><C-H>")

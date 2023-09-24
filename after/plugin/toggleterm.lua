@@ -1,1 +1,1 @@
-vim.keymap.set("n", "<F6>", ":ToggleTerm<CR>")
+vim.keymap.set("n", "<leader>tt", ":ToggleTerm<CR>")
