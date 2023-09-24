@@ -61,10 +61,7 @@ require("lazy").setup({
   { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 
   -- terminal
-  { "akinsho/toggleterm.nvim", config = function()
-     require("toggleterm").setup()
-   end},
-
+  -- {'akinsho/toggleterm.nvim', version = "*", opt = {size = 20}},
   -- function/class views
   { "preservim/tagbar"},
 
@@ -99,7 +96,7 @@ require("lazy").setup({
     dependencies = { { "MunifTanjim/nui.nvim" }, { "rcarriga/nvim-notify" }, { "nvim-lua/plenary.nvim" } },
   },
   { "laytan/cloak.nvim" },
-  { "nvim-lualine/lualine.nvim" },
+  -- { "nvim-lualine/lualine.nvim" },
   { "lukas-reineke/indent-blankline.nvim" },
   { "Mofiqul/vscode.nvim" },
   { "vim-airline/vim-airline" },
