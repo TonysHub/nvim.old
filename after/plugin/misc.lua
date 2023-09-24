@@ -49,7 +49,7 @@ spectre.setup()
 
 -- keymaps
 
-nnoremap("<leader>so", spectre.open)
+nnoremap("<leader>so", '<cmd>lua require("spectre").toggle()<CR>', silent)
 vnoremap("<leader>so", spectre.open_visual)
 nnoremap("<leader>u", "<Cmd>UndotreeToggle<CR>", silent)
 nnoremap("<leader>gg", "<Cmd>LazyGit<CR>", silent)

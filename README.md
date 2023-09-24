@@ -3,7 +3,7 @@
 In home dir
 
 ```
-$ brew install install fd ripgrep wget gcc gzip gnu-tar gnu-sed git curl
+$ brew install install fd ripgrep wget gcc gzip gnu-tar gnu-sed git curl lazygit
 ```
 ```
 $ cd .config

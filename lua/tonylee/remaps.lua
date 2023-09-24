@@ -47,7 +47,7 @@ nnoremap("<leader>g", "ggVG<CR>")
 nnoremap("<leader>f", vim.lsp.buf.format)
 
 -- move through buffers
-nnoremap("<leader>h", "<C-w>h<CR>")
-nnoremap("<leader>j", "<C-w>j<CR>")
-nnoremap("<leader>k", "<C-w>k<CR>")
-nnoremap("<leader>l", "<C-w>l<CR>")
+-- nnoremap("<leader>h", "<C-w><C-H>")
+-- nnoremap("<leader>j", "<C-w>j<CR>")
+-- nnoremap("<leader>k", "<C-w>k<CR>")
+-- nnoremap("<leader>l", "<C-w>l<CR>")

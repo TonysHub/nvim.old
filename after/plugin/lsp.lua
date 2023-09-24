@@ -95,3 +95,12 @@ require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 require('lspconfig').pylsp.setup{
    settings = pylsp_config
 }
+
+
+require("mason-nvim-dap").setup({
+  ensure_installed = { "python", "cpp" },
+  automatic_installation = true,
+  handlers = {
+    function(config) require("mason-nvim-dap").default_setup(config) end,
+  },
+})
