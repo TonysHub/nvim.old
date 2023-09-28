@@ -59,6 +59,7 @@ require("lazy").setup({
   { "ThePrimeagen/harpoon" },
   { "nvim-telescope/telescope.nvim" },
   { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+  {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
   -- terminal
   -- {'akinsho/toggleterm.nvim', version = "*", opt = {size = 20}},
@@ -89,6 +90,7 @@ require("lazy").setup({
   { "uga-rosa/ccc.nvim" },
   { "nvim-pack/nvim-spectre" },
   { "tpope/vim-surround" },
+  { "echasnovski/mini.bufremove", version = "*"},
 
   -- looks
   {

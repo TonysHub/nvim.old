@@ -8,8 +8,8 @@ local vnoremap = Remap.vnoremap
 local silent = { silent = true }
 
 -- easier to enter normal mode
-inoremap("<C-c>", "<Esc>")
 
+inoremap("<c-c>", "<esc>")
 -- built in terminal
 nnoremap("<C-t>", "<Cmd>sp<CR> <Cmd>term<CR> <Cmd>resize 20N<CR> i", silent)
 
@@ -58,7 +58,11 @@ tnoremap("<D-v>", function()
 end, silent)
 
 -- move through buffers
--- nnoremap("<leader>h", "<C-w><C-H>")
--- nnoremap("<leader>j", "<C-w>j<CR>")
--- nnoremap("<leader>k", "<C-w>k<CR>")
--- nnoremap("<leader>l", "<C-w>l<CR>")
+nnoremap("<C-k>", "<C-w>k", silent)
+nnoremap("<C-h>", "<C-w>h", silent)
+nnoremap("<C-j>", "<C-w>j", silent)
+nnoremap("<C-l>", "<C-w>l", silent)
+
+-- indent
+vnoremap("<", "<gv")
+vnoremap(">", ">gv")
