@@ -4,7 +4,9 @@ local telescope_builtin = require("telescope.builtin")
 local silent = { silent = true }
 
 nnoremap("<leader>pf", telescope_builtin.find_files, silent)
-nnoremap("<leader>ps", telescope_builtin.live_grep, silent)
+nnoremap("<leader>ps", function()
+    telescope_builtin.grep_string({ search = vim.fn.input("Grep > ")});
+end, silent)
 nnoremap("<leader>pb", telescope_builtin.buffers, silent)
 nnoremap("<C-p>", telescope_builtin.git_files, silent)
 

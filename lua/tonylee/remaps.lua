@@ -17,13 +17,13 @@ nnoremap("<C-t>", "<Cmd>sp<CR> <Cmd>term<CR> <Cmd>resize 20N<CR> i", silent)
 nnoremap("<C-s>", "<Cmd>set spell!<CR>", silent)
 
 -- misc
-nnoremap("<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
-nnoremap("<leader>q", "<Cmd>q<CR>")
-nnoremap("<leader>w", "<Cmd>w<CR>")
+nnoremap("<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", silent)
+nnoremap("<leader>q", "<Cmd>q<CR>", silent)
+nnoremap("<leader>w", "<Cmd>w<CR>", silent)
 
 -- shift current line up & down
-vnoremap("J", ":m '>+1<CR>gv=gv")
-vnoremap("K", ":m '<-2<CR>gv=gv")
+vnoremap("J", ":m '>+1<CR>gv=gv", silent)
+vnoremap("K", ":m '<-2<CR>gv=gv", silent)
 
 -- append line from below
 nnoremap("J", "mzJ`z")
@@ -43,8 +43,8 @@ nnoremap("<leader>y", [["+y]])
 vnoremap("<leader>y", [["+y]])
 
 -- select all
-vnoremap("<leader>g", "ggVG<CR>")
-nnoremap("<leader>g", "ggVG<CR>")
+vnoremap("<leader>g", "ggVG<CR>", silent)
+nnoremap("<leader>g", "ggVG<CR>", silent)
 
 -- apply formatting
 nnoremap("<leader>f", vim.lsp.buf.format)
@@ -66,3 +66,7 @@ nnoremap("<C-l>", "<C-w>l", silent)
 -- indent
 vnoremap("<", "<gv")
 vnoremap(">", ">gv")
+
+-- split buffers
+nnoremap("|", "<C-w>v", silent)
+nnoremap("-", "<C-w>s", silent)
