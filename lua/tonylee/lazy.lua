@@ -98,9 +98,9 @@ require("lazy").setup({
     dependencies = { { "MunifTanjim/nui.nvim" }, { "rcarriga/nvim-notify" }, { "nvim-lua/plenary.nvim" } },
   },
   { "laytan/cloak.nvim" },
-  -- { "nvim-lualine/lualine.nvim" },
+  { "nvim-lualine/lualine.nvim" },
   { "lukas-reineke/indent-blankline.nvim" },
   { "Mofiqul/vscode.nvim" },
-  { "vim-airline/vim-airline" },
-  { "vim-airline/vim-airline-themes"},
+  -- { "vim-airline/vim-airline" },
+  -- { "vim-airline/vim-airline-themes"},
 })
