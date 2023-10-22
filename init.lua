@@ -9,3 +9,5 @@ require("tonylee")
 require("notify").setup({
   background_colour = "#000000",
 })
+-- -- vim.o.background = "dark" -- or "light" for light mode
+-- vim.cmd([[colorscheme gruvbox-material]])

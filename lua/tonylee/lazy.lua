@@ -83,10 +83,10 @@ require("lazy").setup({
   -- misc
   { "kevinhwang91/nvim-bqf", ft = "qf" },
   { "mbbill/undotree" },
-  {
-    "iamcco/markdown-preview.nvim",
-    build = "cd app && npm install",
-  },
+  -- {
+  --   "iamcco/markdown-preview.nvim",
+  --   build = "cd app && npm install",
+  -- },
   { "uga-rosa/ccc.nvim" },
   { "nvim-pack/nvim-spectre" },
   { "tpope/vim-surround" },
@@ -101,6 +101,14 @@ require("lazy").setup({
   { "nvim-lualine/lualine.nvim" },
   { "lukas-reineke/indent-blankline.nvim" },
   { "Mofiqul/vscode.nvim" },
+  { "sainnhe/gruvbox-material"},
+  { "rebelot/kanagawa.nvim" },
+  { 'norcalli/nvim-colorizer.lua' },
+  { "NLKNguyen/papercolor-theme" },
+  { 'nathanaelkane/vim-indent-guides' },
+  -- {"jacoborus/tender.vim"},
+  -- { "savq/melange-nvim" },
+  -- { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...},
   -- { "vim-airline/vim-airline" },
   -- { "vim-airline/vim-airline-themes"},
 })
